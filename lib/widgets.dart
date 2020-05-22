@@ -89,7 +89,7 @@ class ScanResultTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ExpansionTile(
       title: _buildTitle(context),
-      leading: Text((result.rssi >= -51) ? "Contact potentiel" : "Distances respectées"),
+      leading: Text((result.rssi >= -51) ? "${result.rssi} : Contact potentiel" : "${result.rssi}  Distances respectées"),
       trailing: RaisedButton(
         child: Text('CONNECT'),
         color: Colors.black,
